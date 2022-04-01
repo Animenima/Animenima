@@ -1,0 +1,16 @@
+body {
+  background-image: url(https://github.com/Animenima/Animenima.github.io/blob/main/background.png);
+  background-color: gray
+}
+
+h1 {
+  color: orange;
+}
+
+p {
+  color: red;
+}
+
+#center {
+  text-align: center;
+}
