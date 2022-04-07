@@ -5,11 +5,11 @@
 <html lang="en">
 <title>Animenima</title>
 <head>
-
+<link rel="stylesheet" type="text/css" href="stylesheet.css"
 </head>
 <body>
-	<form action="login.php" method="post">
-		<h1>LOGIN></h1>
+	<form action="main.php" method="post">
+		<h2>LOGIN</h2>
 		<?php if (isset($_GET['error'])) { ?>
 				<p class="error"><?php echo $_GET['error']; ?></p>
 		<?php } ?>
