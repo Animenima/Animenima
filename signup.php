@@ -101,8 +101,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Sign Up</title>
     <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
+        body{
+          font: 14px sans-serif;
+          background-color: gray;
+        }
+        .wrapper{
+          width: auto;
+          padding: 20px;
+          text-align: center;
+        }
+        .form-group {
+          margin-bottom: 1rem;
+        }
+        form {
+          display: table;
+        }
+        div {
+          display: table-row;
+        }
+        label{
+          display: table-cell;
+        }
+        input {
+          display: table-cell;
+        }
     </style>
 </head>
 <body>

@@ -92,16 +92,42 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Animenima</title>
     <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; }
+        body{
+          font: 14px sans-serif;
+          background-color: gray;
+          color: #000000
+        }
+        .wrapper{
+          width: auto;
+          padding: 20px;
+          text-align: center;
+        }
+        h2 {
+          font-size: 40px;
+        }
+        .form-group {
+          margin-bottom: 1rem;
+        }
+        form {
+          display: table;
+        }
+        div {
+          display: table-row;
+        }
+        label{
+          display: table-cell;
+        }
+        input {
+          display: table-cell;
+        }
     </style>
 </head>
 <body>
     <div class="wrapper">
         <h2>Login</h2>
-        <p>Please fill in your credentials to login.</p>
+        <p style="font-size: 20px;">Enter your info to begin</p>
 
         <?php
         if(!empty($login_err)){
@@ -123,7 +149,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
+            <p style="color= #000000">Don't have an account? <a href="signup.php">Sign up now</a>.</p>
         </form>
     </div>
 </body>
