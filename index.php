@@ -95,32 +95,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Animenima</title>
     <style>
         body{
-          font: 14px sans-serif;
+          font: 16px sans-serif;
           background-color: gray;
-          color: #000000
+          color: #000000;
         }
         .wrapper{
           width: auto;
           padding: 20px;
           text-align: center;
+          align: center;
         }
         h2 {
           font-size: 40px;
         }
         .form-group {
           margin-bottom: 1rem;
-        }
-        form {
-          display: table;
-        }
-        div {
-          display: table-row;
-        }
-        label{
-          display: table-cell;
-        }
-        input {
-          display: table-cell;
         }
     </style>
 </head>
@@ -149,7 +138,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p style="color= #000000">Don't have an account? <a href="signup.php">Sign up now</a>.</p>
+            <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
         </form>
     </div>
 </body>

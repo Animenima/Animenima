@@ -13,10 +13,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>Animenima</title>
     <style>
         body {
-          font: 14px sans-serif;
+          font: 16px sans-serif;
           text-align: center;
           background-color: gray
         }
@@ -26,10 +26,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </style>
 </head>
 <body>
-    <h1 class="welcome">Hello, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to Animenima!</h1>
+    <h1 class="welcome">Hello, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</br>Welcome to Animenima!</h1>
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
-        <a href="logout.php" class="btn btn-danger ml-3">Sign Out</a>
+        <br><a href="logout.php" class="btn btn-danger ml-3">Sign Out</a>
     </p>
+
 </body>
 </html>
