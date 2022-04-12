@@ -26,11 +26,18 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </style>
 </head>
 <body>
-    <h1 class="welcome">Hello, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>.</br>Welcome to Animenima!</h1>
-    <p>
-        <a href="reset-password.php" class="btn btn-warning">Reset Password</a>
-        <br><a href="logout.php" class="btn btn-danger ml-3">Sign Out</a>
-    </p>
-
+    <select id="creatures" name="creatures" style="padding: 4px" onchange="if (window.__cfrLUnblockHandlers) return false; showCreature(this.value)"> == $0
+      <option value="0">Select Creature</option>
+      <option value="1">Slime</option>
+      <option value="2">Goblin</option>
+      <option value="3">Goblin Mage</option>
+      <option value="4">Kobold</option>
+      <option value="5">Greater Kobold</option>
+      <option value="6">Orc</option>
+      <option value="7">Troll</option>
+      <option value="8"></option>
+      <option value="9"></option>
+      <option value="10"></option>
+    </select>
 </body>
 </html>
