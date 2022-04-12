@@ -99,31 +99,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Sign Up</title>
     <style>
         body{
-          font: 14px sans-serif;
-          background-color: gray;
-        }
-        .wrapper{
-          width: auto;
-          padding: 20px;
-          text-align: center;
-        }
-        .form-group {
-          margin-bottom: 1rem;
-        }
-        form {
-          display: table;
-        }
-        div {
-          display: table-row;
-        }
-        label{
-          display: table-cell;
-        }
-        input {
-          display: table-cell;
+          font-size:14px;
         }
     </style>
 </head>
@@ -148,10 +128,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-secondary ml-2" value="Reset">
+                <input type="submit" class="button" value="Submit">
+                <input type="reset" class="button" value="Reset">
             </div>
-            <p>Already have an account? <a href="index.php">Login here</a>.</p>
+            <p>Already have an account? <a href="index.php" class="button">Login here</a></p>
         </form>
     </div>
 </body>

@@ -92,24 +92,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Animenima</title>
     <style>
         body{
-          font: 16px sans-serif;
-          background-color: gray;
-          color: #000000;
-        }
-        .wrapper{
-          width: auto;
-          padding: 20px;
-          text-align: center;
-          align: center;
+          font-size: 16px;
         }
         h2 {
           font-size: 40px;
-        }
-        .form-group {
-          margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -127,18 +117,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <input type="text" name="username" class="button <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                <input type="password" name="password" class="button <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Login">
+            <div class="button">
+                <input type="submit" class="button" value="Login">
             </div>
-            <p>Don't have an account? <a href="signup.php">Sign up now</a>.</p>
+            <p>Don't have an account? <a href="signup.php" class="button">Sign up now</a>.</p>
         </form>
     </div>
 </body>

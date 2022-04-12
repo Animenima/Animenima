@@ -13,6 +13,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Animenima</title>
     <style>
         body {
@@ -26,31 +27,27 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </style>
 </head>
 <body>
-    <center>
-      <table style="margin-top: 6px; width:auto;" cellspacing="0" cellpadding="0">
-        <tbody>
-          <tr>
-            <td colspan="3">
-              <table cellspacing="0" cellpassing="0" style="width: 95%;">
-                <tbody>
-                  <tr>
-                    <td width="5%" valign="top" style="">
-                      <p><?php echo htmlspecialchars(S_SESSION["username"]); ?></p>
-              <select id="creatures" name="creatures" style="padding: 4px" onchange="if (window.__cfrLUnblockHandlers) return false; showCreature(this.value)"> == $0
-                <option value="0">Select Creature</option>
-                <option value="1">Slime</option>
-                <option value="2">Goblin</option>
-                <option value="3">Goblin Mage</option>
-                <option value="4">Kobold</option>
-                <option value="5">Greater Kobold</option>
-                <option value="6">Orc</option>
-                <option value="7">Troll</option>
-                <option value="8"></option>
-                <option value="9"></option>
-                <option value="10"></option>
-              </select>
-        </tbody>
-      </table>
-    </center>
+  <p>
+    <?php echo htmlspecialchars($_SESSION["username"]); ?>
+  </p>
+
+  <select id="creatures" name="creatures" style="padding: 4px" onchange="if (window.__cfrLUnblockHandlers) return false; showCreature(this.value)"> == $0
+    <option value="0">Select Creature</option>
+    <option value="1">Slime</option>
+    <option value="2">Goblin</option>
+    <option value="3">Goblin Mage</option>
+    <option value="4">Kobold</option>
+    <option value="5">Greater Kobold</option>
+    <option value="6">Orc</option>
+    <option value="7">Troll</option>
+    <option value="8"></option>
+    <option value="9"></option>
+    <option value="10"></option>
+  </select>
+
+  <p>
+    <a href="reset-password.php" class="button">Reset Password</a>
+    <br><a href="logout.php" class="button">Sign Out</a>
+  </p>
 </body>
 </html>
